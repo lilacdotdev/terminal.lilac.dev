@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal | Lilac</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crt-layer">
+        <div class="terminal-inner">
+            <div class="terminal-text">    
+                <div class="starter-lines"><pre> _     _ _               _       _      _            
+| |   (_) |             | |     | |    | |           
+| |    _| | __ _  ___ __| | ___ | |_ __| | _____   __
+| |   | | |/ _` |/ __/ _` |/ _ \| __/ _` |/ _ \ \ / /
+| |___| | | (_| | (_| (_| | (_) | || (_| |  __/\ V / 
+\_____/_|_|\__,_|\___\__,_|\___/ \__\__,_|\___| \_/</pre>   
+                    Welcome to <span class="title-name">lilaccs.dev</span>.
+                </div>
+                <div class="command-trace">
+                    <!-- Here goes the inputted command by the user -->
+                </div>
+                <div class="command-out">
+                    <!-- Here goes all the output text -->
+                </div>
+            </div>
+            <div class="command-line" onclick="document.getElementById('cmd-typing').focus();">
+                <span>terminal@<span class="title-name">lilaccs.dev</span>:~$</span>
+                <textarea type="text" id="cmd-typing" autofocus></textarea>
+                <span id="typing"></span>
+                <b class="cursor">█</b>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

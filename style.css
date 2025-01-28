@@ -1,0 +1,98 @@
+@media screen{
+    .crt-layer {
+      animation: scanlines infinite 55s linear;
+    }
+  } 
+  @keyframes scanlines {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 -100px;
+    }
+  }
+
+:root {
+    --crust: #181926;
+    --text: #cad3f5;
+    --lilac: #c6a0f6;
+    --green: #a6da95;
+}
+
+body {
+    background-color: var(--crust);
+    color: var(--text);
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    height: 100vh;
+}
+
+.crt-layer::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(18, 16, 16, 0.1);
+    opacity: 0;
+    z-index: 2;
+    animation: flicker 0.15s infinite;
+    pointer-events: none;
+}
+
+.crt-layer::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(#00000033 50%, #00000066 50%);
+    z-index: 2;
+    background-size: 100% 5px;
+    pointer-events: none;
+}
+
+.crt-layer {
+    pointer-events: none;
+}
+
+.terminal-inner {
+
+    height: 95vh;
+    width: 95vw;
+    padding-top: 5vw;
+    padding-left: 5vw;
+    display: block;
+
+    align-items: start;
+    justify-content: left;
+}
+
+.command-line {
+    margin-top: 8px;
+    pointer-events: all;
+}
+
+textarea {
+    left: -9999px;
+    position: absolute;
+}
+
+
+@keyframes cursor-blink{
+    50% {
+        opacity: 0;
+    }
+}
+
+.cursor {
+    animation: cursor-blink 0.5s infinite;
+}
+
+.title-name {
+    color: var(--lilac);
+}
