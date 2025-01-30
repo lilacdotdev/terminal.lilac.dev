@@ -1,17 +1,4 @@
-@media screen{
-    .crt-layer {
-      animation: scanlines infinite 55s linear;
-    }
-  } 
-  @keyframes scanlines {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 0 -100px;
-    }
-  }
-
+/* -----| Vars |----- */
 :root {
     --crust: #181926;
     --text: #cad3f5;
@@ -19,6 +6,8 @@
     --green: #a6da95;
 }
 
+
+/* -----| Globals |----- */
 body {
     background-color: var(--crust);
     color: var(--text);
@@ -27,6 +16,7 @@ body {
     height: 100vh;
 }
 
+/* -----| CRT |----- */
 .crt-layer::after {
     content: " ";
     display: block;
@@ -38,7 +28,6 @@ body {
     background: rgba(18, 16, 16, 0.1);
     opacity: 0;
     z-index: 2;
-    animation: flicker 0.15s infinite;
     pointer-events: none;
 }
 
@@ -60,6 +49,7 @@ body {
     pointer-events: none;
 }
 
+/* -----| Inner CLI Settings |----- */
 .terminal-inner {
 
     height: 95vh;
@@ -82,7 +72,7 @@ textarea {
     position: absolute;
 }
 
-
+/* -----| Cursor Settings |----- */
 @keyframes cursor-blink{
     50% {
         opacity: 0;
@@ -93,6 +83,7 @@ textarea {
     animation: cursor-blink 0.5s infinite;
 }
 
+/* -----| Text-related formatting |----- */
 .title-name {
     color: var(--lilac);
 }
