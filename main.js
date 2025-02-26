@@ -4,6 +4,7 @@ const typing = document.getElementById('typing').innerHTML;
 
 let prompt = "";
 
+// ! DEBUG: Keydown on in textarea.
 terminal_in.addEventListener('keydown', (event) => {
     if(event.key === 'Backspace') {
         alert("back");
@@ -13,6 +14,8 @@ terminal_in.addEventListener('keydown', (event) => {
         alert("key");
     }
   });
+
+
 
 function command(cmd) {
     switch(cmd.toLowerCase()) {
