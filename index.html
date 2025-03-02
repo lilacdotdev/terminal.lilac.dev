@@ -19,15 +19,13 @@
 \_____/_|_|\__,_|\___\__,_|\___/ \__\__,_|\___| \_/</pre>   
                     Welcome to <span class="title-name">lilaccs.dev</span>.
                 </div>
-                <div class="command-trace">
-                    <!-- Here goes the inputted command by the user -->
-                </div>
                 <div class="command-out">
                     <!-- Here goes all the output text -->
+                    <span id="trace"></span>
                 </div>
             </div>
             <div class="command-line" onclick="document.getElementById('cmd-typing').focus();">
-                <span>terminal@<span class="title-name">lilaccs.dev</span> ></span>
+                <span>terminal@<span class="title-name">lilaccs.dev</span> > <span id=output></span></span>
                 <textarea type="text" id="cmd-typing" autofocus></textarea>
                 <span id="typing"></span>
                 <b class="cursor" id="cursor">█</b>
@@ -36,5 +34,6 @@
     </div>
 
     <script src="main.js"></script>
+    <script src="cursor.js"></script>
 </body>
 </html>

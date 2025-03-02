@@ -18,6 +18,8 @@ The goal is to create a fun app that can showcase my abilities and desires to le
   <li>projects - Wanna see? Shows a short list of my projects with links!</li>
   <li>objective - Take a Guess! Showcases a short message of what my aspirations are.</li>
   <li>contact - Email me! Lists all my contacts (with links!)</li>
-  <li>goto - Go where? Sends you somewhere! (main, devlog, youtube, projects)</li>
+  <li>clear - Now let me be clear. Clears all history!</li>
+  <li>dedication - Dedicated to a certain someone... Prints a dedication!</li>
+  <li>resume - Check me out! Drops a link to my resume.</li>
   <li>??? - ????????</li>
 </ul>

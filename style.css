@@ -9,11 +9,18 @@
 
 /* -----| Globals |----- */
 body {
+    overflow: hidden;
     background-color: var(--crust);
     color: var(--text);
     font-family:'Courier New', Courier, monospace;
     margin: 0;
     height: 100vh;
+}
+
+a {
+    color: var(--text);
+    pointer-events: all;
+    z-index: 3;
 }
 
 /* -----| CRT |----- */
@@ -62,12 +69,16 @@ body {
     justify-content: left;
 }
 
+.starter-lines{
+    margin-bottom: 8px;
+}
+
 .command-line {
     margin-top: 8px;
     pointer-events: all;
 }
 
-textarea {
+#cmd-typing {
     left: -9999px;
     position: absolute;
 }
