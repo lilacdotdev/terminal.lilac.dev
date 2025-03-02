@@ -1,4 +1,4 @@
-![Banner Image](assets/banner.png)
+![Banner Image](banner.png)
 
 ![Static Badge](https://img.shields.io/badge/Category-Projects-purple)
 ![Static Badge](https://img.shields.io/badge/Language-HTML-orange)
